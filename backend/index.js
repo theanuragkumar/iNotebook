@@ -7,7 +7,7 @@ var cors = require('cors');
 // To connect to DataBAse
 connectToMango();
 const app = express()
-const port = 5000
+const port = process.env.PORT || 5000;
 
 app.use(cors())
 // to send data in request body
